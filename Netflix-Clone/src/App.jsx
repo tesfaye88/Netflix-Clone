@@ -4,13 +4,19 @@ import Home from './Home/Home'
 import Footer from './Components/Footer/Footer'
 import Header from './Components/Header/Header'
 
+import Movies from './Components/Utils/Movies'
+
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <>
-    <div className='App'><Home /></div>
-    <Footer />
+    {/* <div className='App'><Home /></div> */}
+    <Movies />
+    {/* <Newmovies /> */}
+
+    {/* <Footer /> */}
+
 
       
     </>
