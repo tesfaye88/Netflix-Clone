@@ -13,7 +13,7 @@ function Row({ title, fetchURL, isLargeRow }) {
     useEffect(() => {
         async function fetchData() {
             const request = await axios.get(fetchURL);
-            console.log(request.data.results);
+            // console.log(request.data.results);
             setMovies(request.data.results);
             return request;
         }
@@ -34,7 +34,10 @@ function Row({ title, fetchURL, isLargeRow }) {
         } else {
             movieTrailer(movie?.name || movie?.title || movie?.original_title || "")
                 .then((url) => {
+                    console.log(url)
+
                     const urlParams = new URLSearchParams(new URL(url).search);
+                    console.log(urlParams)
                     setTrailerURL(urlParams.get("v"));
                 })
                 .catch((error) => console.log(error));
