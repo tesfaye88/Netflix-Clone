@@ -3,21 +3,24 @@ import './App.css'
 import Home from './Home/Home'
 import Footer from './Components/Footer/Footer'
 import Header from './Components/Header/Header'
-
-import Movies from './Components/Utils/Movies'
+import Banner from './Components/Banner/Banner'
+import requests from './Components/Utils/requests'
+// import Movies from './Components/Utils/Movies'
 
 function App() {
+ 
   
 
   return (
     <>
-    {/* <div className='App'><Home /></div> */}
-    <Movies />
+    <div className='App'><Home /></div>
+    {/* <Banner /> */}
+    {/* <Movies /> */}l
     {/* <Newmovies /> */}
 
     {/* <Footer /> */}
 
-
+{/* <Banner /> */}
       
     </>
   )
