@@ -10,14 +10,30 @@ function Row({ title, fetchURL, isLargeRow }) {
     const [movies, setMovies] = useState([]);
     const [trailerURL, setTrailerURL] = useState("");
 
+    // movie-trailer allows users to view a trailer for a specific movie, usually from a service like YouTube, Vimeo, or a custom video player.
+
     useEffect(() => {
-        async function fetchData() {
-            const request = await axios.get(fetchURL);
+        (async () => {
+            try {
+                const request = await axios.get(fetchURL);
             // console.log(request.data.results);
             setMovies(request.data.results);
             return request;
-        }
-        fetchData();
+                
+            } catch (err) {
+                console.log(err)
+                
+            }
+            
+        })
+        // async function fetchData() {
+        //     const request = await axios.get(fetchURL);
+        //     // console.log(request.data.results);
+        //     setMovies(request.data.results);
+        //     return request;
+        // }
+        // fetchData();
+        ()
     }, [fetchURL]);
 
     const opts = {
@@ -29,9 +45,11 @@ function Row({ title, fetchURL, isLargeRow }) {
     };
 
     const handleClick = (movie) => {
+        // If a trailer URL already exists, reset it to an empty string
         if (trailerURL) {
             setTrailerURL("");
         } else {
+             // Otherwise, find the trailer for the selected movie
             movieTrailer(movie?.name || movie?.title || movie?.original_title || "")
                 .then((url) => {
                     console.log(url)

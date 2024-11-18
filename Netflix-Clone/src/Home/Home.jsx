@@ -6,7 +6,7 @@ import Banner from '../Components/Banner/Banner'
 import requests from '../Components/Utils/requests'
 import RowList from '../Components/Rows/RowList/RowList'
 function Home() {
-    // const Home=()=>{
+    
     return (
         <>
             <Header />
@@ -17,7 +17,7 @@ function Home() {
             
         </>
     )
-    // }
+  
 }
 
 export default Home

@@ -54,7 +54,7 @@ function Footer() {
 
             </div>
             <div className='footer_code'>
-                <p>Service code</p>
+                Service code
             </div>
             <div className='copyWrite'>
                 <p>&copy; 1997-2024 netflix,inc</p>

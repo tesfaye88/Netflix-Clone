@@ -1,82 +1,40 @@
-.header_outer_container {
-    position: sticky;
+.header_outer_container{
+    position:sticky;
     top: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    background-color: rgb(20, 20, 20);
-    /* background-color: transparent; */
+    background-color:  rgb(20, 20, 20);
     height: 10vh;
     color: white;
-    transition: all 0.5s;
+    transition:all 0.5s;
     transition-timing-function: ease-in;
-    z-index: 12;
-
-}
-
-.header_container {
+    z-index: 1;
+    }
+/* .nav__black{
+    background-color:  rgb(20, 20, 20);
+} */
+.header_container{
     width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: rgb(0, 0, 0); */
-
+    /* background-color: yellow; */
 }
-
-.header_left {
-
-    display: flex;
-    justify-content: center; 
-    /* justify-content: space-between; */
-     align-items: center; 
-    list-style: none;
-    /* background-color: rgb(48, 2, 16); */
-    /* font-size: 15px; */
-    /* background-color: brown; */
-
-}
-
-.header_left ul {
+.header_left ul{
     width: 140%;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
     cursor: pointer;
-    list-style: none;
-    align-items: center; 
-    /* font-size: 15px; */
-    justify-content: center;
-    /* background-color: blue; */
+    
 }
-li{
-    padding: 30px;
-}
-
-.header_left li {
-     
-
-
-    /* display: inline-block; */
-    /* padding: 40px; */
-    /* margin: 20px; */
-    list-style: none;
-    font-size: 20px;
-    /* background-color: greenyellow; */
-    justify-content: center;
-    align-items: center; 
-
-}
-
-.header_right ul {
-    list-style: none;
+.header_right ul{
+    width: 150%;
     display: flex;
-    align-items: center; 
-}
-
-.header_right li {
-    /* justify-content: center; */
-    /* padding: 50px; */
-    /* display: flex; */
-    /* height: 10vh; */
-    /* margin-bottom: 30px; */
-    font-size: 15px;
-    align-items: end;
+    justify-content: space-around;
+    list-style: none;
+    cursor: pointer;
+    
 }

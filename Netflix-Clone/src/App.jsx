@@ -14,14 +14,7 @@ function App() {
   return (
     <>
     <div className='App'><Home /></div>
-    {/* <Banner /> */}
-    {/* <Movies /> */}l
-    {/* <Newmovies /> */}
-
-    {/* <Footer /> */}
-
-{/* <Banner /> */}
-      
+          
     </>
   )
 }
